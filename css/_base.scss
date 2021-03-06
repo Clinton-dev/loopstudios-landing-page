@@ -1,0 +1,21 @@
+//------- 1.Resets, 2.Colors, 3.Media queries -------//
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+// RESETS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+ul { list-style: none; }
+
+body {
+  font-size: 15px;
+  font-family: 'Alata', sans-serif;
+  // font-family: 'Josefin Sans', sans-serif;
+}
