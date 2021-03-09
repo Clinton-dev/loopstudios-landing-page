@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -19,12 +20,103 @@
     <nav>
       <img src="/images/logo.svg" alt="logo image">
       <div class="nav-wrapper">
-        
+        <div class="mobile-wrapper">
+          <a href="#" id="navBtn-link" onclick="displayNav()">
+            <img src="./images/icon-hamburger.svg" alt="menu icon" id="menu-icon">
+            <!-- <img src="./images/icon-close.svg" alt="close icon" id="close-icon"> -->
+          </a>
+          <ul class="mobile-nav" id="nav-menu">
+            <li class="mobile-item">how we work</li>
+            <li class="mobile-item">blog</li>
+            <li class="mobile-item">account</li>
+            <li class="mobile-item">view plans</li>
+          </ul>
+        </div>
+        <ul class="desktop-nav">
+          <li class="desktop-item">about</li>
+          <li class="desktop-item">careers</li>
+          <li class="desktop-item">events</li>
+          <li class="desktop-item">products</li>
+          <li class="desktop-item">support</li>
+        </ul>
       </div>
     </nav>
-    <div class="hero-section"></div>
+    <div class="hero-section">
+      <p>Immersive experiences that deliver</p>
+    </div>
   </header>
+  <main>
+    <article class="top-half">
+      <div class="top-half-img-wrapper">
+        <img src="/images/mobile/image-interactive.jpg" alt="white male with VR head set" class="top-half-img">
+      </div>
+      <div class="top-half-infor">
+        <h1 class="head-txt">The leader in interactive VR</h1>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.</p>
+      </div>
+    </article>
+    <section class="creations">
+      <h2>our creations</h2>
+      <div class="creation one">
+        <img src="/images/mobile/image-deep-earth.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">Deep earth</p>
+      </div>
+      <div class="creation two">
+        <img src="/images/mobile/image-night-arcade.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">Night arcade</p>
+      </div>
+      <div class="creation three">
+        <img src="/images/mobile/image-soccer-team.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">Soccer team VR</p>
+      </div>
+      <div class="creation four">
+        <img src="/images/mobile/image-grid.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">The grid</p>
+      </div>
+      <div class="creation five">
+        <img src="/images/mobile/image-from-above.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">From up above VR</p>
+      </div>
+      <div class="creation six">
+        <img src="/images/mobile/image-pocket-borealis.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">Pocket borealis</p>
+      </div>
+      <div class="creation seven">
+        <img src="/images/mobile/image-curiosity.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">the curiosity</p>
+      </div>
+      <div class="creation last-creation">
+        <img src="/images/mobile/image-fisheye.jpg" alt="earth from space" class="creation-img">
+        <p class="creation-txt">make it fishy</p>
+      </div>
+       <a href="#" class="cta">see all</a>
+    </section>
+  </main>
 
+  <footer>
+    <section class="left-footer">
+      <img src="/images/logo.svg" alt="logo img" class="logo-footer">
+      <ul class="footer-nav">
+        <li class="footer-nav-item" >about</li>
+        <li class="footer-nav-item">career</li>
+        <li class="footer-nav-item">events</li>
+        <li class="footer-nav-item">product</li>
+        <li class="footer-nav-item">support</li>
+      </ul>
+    </section>
+    <section class="right-footer">
+      <ul class="footer-icons">
+        <li><a href="#"><img src="/images/icon-facebook.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="/images/icon-twitter.svg" alt="twitter"></a></li>
+        <li><a href="#"><img src="/images/icon-pinterest.svg" alt="pinterest"></a></li>
+        <li><a href="#"><img src="/images/icon-instagram.svg" alt="instagram"></a></li>
+      </ul>
+      <p class="copy-write">© 2021 Loopstudios. All rights reserved.</p>
+    </section>
+  </footer>
   <div class="attribution" style="display: none;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

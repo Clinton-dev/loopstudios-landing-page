@@ -1,0 +1,28 @@
+header {
+  background-image: url(/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2em 1em;
+  margin-bottom: 6em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11em;
+}
+
+.hero-section {
+  border: 1px solid white;
+  padding: .5em;
+}
+
+.creations {
+  position: relative;
+  border: 1px dotted;
+}
+.creations h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+}

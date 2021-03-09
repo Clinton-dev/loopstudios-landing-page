@@ -18,4 +18,371 @@ body {
   font-family: "Alata", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  background-image: url(/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2em 1em;
+  margin-bottom: 6em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11em;
+}
+
+.hero-section {
+  border: 1px solid white;
+  padding: 0.5em;
+}
+
+.creations {
+  position: relative;
+  border: 1px dotted;
+}
+
+.creations h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+nav {
+  margin-bottom: 4em;
+}
+
+@media (min-width: 376px) {
+  header {
+    padding: 2em 2em;
+  }
+}
+@media (min-width: 600px) {
+  header {
+    padding: 2em 3em;
+  }
+}
+@media (min-width: 900px) {
+  header {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 8em;
+    background-image: url(/images/desktop/image-hero.jpg);
+    margin-bottom: 2em;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (min-width: 376px) {
+  .mobile-wrapper {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .mobile-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+@media (min-width: 376px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .desktop-nav {
+    display: flex;
+  }
+}
+
+.desktop-item {
+  color: white;
+  text-transform: capitalize;
+  margin-left: 1em;
+}
+
+.hero-section {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.hero-section p {
+  font-size: 3rem;
+}
+@media (min-width: 900px) {
+  .hero-section {
+    width: 55%;
+    padding-right: 2em;
+  }
+}
+
+main {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 4em;
+}
+@media (min-width: 376px) {
+  main {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+@media (min-width: 600px) {
+  main {
+    padding: 2em 3em;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+
+.top-half {
+  text-align: center;
+  margin-bottom: 6em;
+}
+.top-half h1.head-txt {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 0.7em;
+}
+.top-half p {
+  color: dimgray;
+  line-height: 1.6;
+}
+@media (min-width: 900px) {
+  .top-half {
+    display: flex;
+    margin-bottom: 10em;
+  }
+}
+
+@media (min-width: 900px) {
+  .top-half-img-wrapper {
+    flex: 1;
+    background-image: url(/images/desktop/image-interactive.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 50vh;
+  }
+}
+
+.top-half-img {
+  width: 100%;
+  margin-bottom: 3em;
+}
+@media (min-width: 900px) {
+  .top-half-img {
+    display: none;
+  }
+}
+
+.top-half-infor {
+  background-color: white;
+}
+@media (min-width: 376px) {
+  .top-half-infor {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+@media (min-width: 900px) {
+  .top-half-infor {
+    flex: 1;
+    align-self: flex-end;
+    text-align: left;
+    padding: 3em;
+    margin-left: -5em;
+    margin-bottom: -7em;
+  }
+}
+
+.creations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+@media (min-width: 900px) {
+  .creations h2 {
+    text-align: left;
+    grid-column: 1/5;
+  }
+}
+
+.creation {
+  position: relative;
+  margin-bottom: 2em;
+}
+@media (min-width: 900px) {
+  .creation {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 50vh;
+  }
+}
+
+.one {
+  background-image: url(/images/desktop/image-deep-earth.jpg);
+}
+
+.two {
+  background-image: url(/images/desktop/image-night-arcade.jpg);
+}
+
+.three {
+  background-image: url(/images/desktop/image-soccer-team.jpg);
+}
+
+.four {
+  background-image: url(/images/desktop/image-grid.jpg);
+}
+
+.five {
+  background-image: url(/images/desktop/image-from-above.jpg);
+}
+
+.six {
+  background-image: url(/images/desktop/image-pocket-borealis.jpg);
+}
+
+.seven {
+  background-image: url(/images/desktop/image-curiosity.jpg);
+}
+
+.creation-img {
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .creation-img {
+    display: none;
+  }
+}
+
+.creation-txt {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.last-creation {
+  margin-bottom: 2em;
+}
+@media (min-width: 900px) {
+  .last-creation {
+    margin-bottom: 0;
+    background-image: url(/images/desktop/image-fisheye.jpg);
+  }
+}
+
+.cta {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border: 1px solid black;
+  padding: 0.5em 1em;
+}
+@media (min-width: 900px) {
+  .cta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    margin: 0;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+@media (min-width: 900px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+
+.logo-footer {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+@media (min-width: 900px) {
+  .logo-footer {
+    margin: 0;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 2em;
+}
+@media (min-width: 900px) {
+  .footer-nav {
+    margin: 0;
+  }
+}
+
+.left-footer {
+  text-align: left;
+}
+
+.footer-nav-item {
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+@media (min-width: 900px) {
+  .footer-nav-item {
+    display: inline-block;
+  }
+}
+
+.right-footer {
+  text-align: right;
+}
+
+.footer-icons {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 900px) {
+  .footer-icons {
+    margin: 0;
+  }
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+p.copy-write {
+  color: #8c8c8c;
+}
+
 /*# sourceMappingURL=main.css.map */
