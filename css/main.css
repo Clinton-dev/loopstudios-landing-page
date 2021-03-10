@@ -43,7 +43,6 @@ nav {
 
 .creations {
   position: relative;
-  border: 1px dotted;
 }
 
 .creations h2 {
@@ -73,6 +72,18 @@ nav {
     padding-bottom: 8em;
     background-image: url(/images/desktop/image-hero.jpg);
     margin-bottom: 2em;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+@media (min-width: 1800px) {
+  header {
+    padding-left: 8em;
+    padding-right: 8em;
   }
 }
 
@@ -112,6 +123,11 @@ nav {
   text-transform: capitalize;
   margin-left: 1em;
 }
+@media (min-width: 1800px) {
+  .desktop-item {
+    font-size: 1.5rem;
+  }
+}
 
 .hero-section {
   color: white;
@@ -122,10 +138,21 @@ nav {
 .hero-section p {
   font-size: 3rem;
 }
+@media (min-width: 1800px) {
+  .hero-section p {
+    font-size: 4rem;
+  }
+}
 @media (min-width: 900px) {
   .hero-section {
     width: 55%;
     padding-right: 2em;
+  }
+}
+@media (min-width: 1800px) {
+  .hero-section {
+    width: 45%;
+    padding-right: 1em;
   }
 }
 
@@ -151,6 +178,18 @@ main {
     padding-right: 4em;
   }
 }
+@media (min-width: 1200px) {
+  main {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+@media (min-width: 1800px) {
+  main {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
 
 .top-half {
   text-align: center;
@@ -162,9 +201,19 @@ main {
   color: black;
   margin-bottom: 0.7em;
 }
+@media (min-width: 1800px) {
+  .top-half h1.head-txt {
+    font-size: 3.7rem;
+  }
+}
 .top-half p {
   color: dimgray;
   line-height: 1.6;
+}
+@media (min-width: 1800px) {
+  .top-half p {
+    font-size: 1.7rem;
+  }
 }
 @media (min-width: 900px) {
   .top-half {
@@ -180,6 +229,11 @@ main {
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 50vh;
+  }
+}
+@media (min-width: 1800px) {
+  .top-half-img-wrapper {
+    min-height: 60vh;
   }
 }
 
@@ -212,6 +266,16 @@ main {
     margin-bottom: -7em;
   }
 }
+@media (min-width: 1200px) {
+  .top-half-infor {
+    margin-bottom: unset;
+  }
+}
+@media (min-width: 1800px) {
+  .top-half-infor {
+    margin-bottom: unset;
+  }
+}
 
 .creations {
   display: grid;
@@ -223,6 +287,11 @@ main {
   .creations h2 {
     text-align: left;
     grid-column: 1/5;
+  }
+}
+@media (min-width: 1800px) {
+  .creations h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -280,7 +349,13 @@ main {
   bottom: 1rem;
   left: 1rem;
   color: white;
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .creation-txt {
+    font-size: 1.5rem;
+  }
 }
 
 .last-creation {
@@ -313,6 +388,11 @@ main {
     margin: 0;
   }
 }
+@media (min-width: 1800px) {
+  .cta {
+    font-size: 1.5rem;
+  }
+}
 
 footer {
   background-color: black;
@@ -326,6 +406,19 @@ footer {
     justify-content: space-between;
     padding-left: 4em;
     padding-right: 4em;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+@media (min-width: 1800px) {
+  footer {
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 2em;
   }
 }
 
@@ -359,6 +452,12 @@ footer {
 @media (min-width: 900px) {
   .footer-nav-item {
     display: inline-block;
+    margin-right: 1em;
+  }
+}
+@media (min-width: 1800px) {
+  .footer-nav-item {
+    font-size: 1.4rem;
   }
 }
 
@@ -376,6 +475,10 @@ footer {
   }
 }
 
+.footer-icons li img {
+  width: 2rem;
+}
+
 .footer-icons li {
   display: inline-block;
   margin-left: 1em;
@@ -383,6 +486,11 @@ footer {
 
 p.copy-write {
   color: #8c8c8c;
+}
+@media (min-width: 1800px) {
+  p.copy-write {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

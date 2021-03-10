@@ -56,6 +56,16 @@ header {
     background-image: url(/images/desktop/image-hero.jpg);
     margin-bottom: 2em;
   }
+
+  @include for-desktop-up() {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  @include for-big-desktop-up() {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
 }
 
 .mobile-nav {
@@ -72,6 +82,7 @@ header {
     display: none;
   }
 }
+
 
 .desktop-nav {
   @include for-phone() {
@@ -91,6 +102,10 @@ header {
   color: color(secondary-1);
   text-transform: capitalize;
   margin-left: 1em;
+
+  @include for-big-desktop-up() {
+    font-size: 1.5rem;
+  }
 }
 
 .hero-section {
@@ -99,11 +114,22 @@ header {
   text-transform: uppercase;
   padding: 1em;
 
-  p { font-size: 3rem; }
+  p { 
+    font-size: 3rem;
+
+    @include for-big-desktop-up() {
+      font-size: 4rem;
+    }
+  }
 
   @include for-tablet-landscape-up() {
     width: 55%;
     padding-right: 2em;
+  }
+
+  @include for-big-desktop-up() {
+    width: 45%;
+    padding-right: 1em;
   }
 }
 
@@ -126,6 +152,16 @@ main {
     padding-left: 4em;
     padding-right: 4em;
   }
+
+  @include for-desktop-up() {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  @include for-big-desktop-up() {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
 }
 
 // TOP HALF SECTION
@@ -138,11 +174,19 @@ main {
     text-transform: uppercase;
     color: color(primary);
     margin-bottom: .7em;
+
+    @include for-big-desktop-up() {
+      font-size: 3.7rem;
+    }
   }
 
   p { 
     color: color(secondary);
     line-height: 1.6;
+
+    @include for-big-desktop-up() {
+      font-size: 1.7rem;
+    }
   }
 
   @include for-tablet-landscape-up() {
@@ -158,6 +202,10 @@ main {
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 50vh;
+  }
+
+  @include for-big-desktop-up() {
+    min-height: 60vh;
   }
 }
 
@@ -186,6 +234,14 @@ main {
      margin-left: -5em;
      margin-bottom: -7em;
    }
+
+   @include for-desktop-up() {
+    margin-bottom: unset;
+  }
+  
+  @include for-big-desktop-up() {
+     margin-bottom: unset;
+   }
 }
 
 // creations section
@@ -199,6 +255,10 @@ main {
   @include for-tablet-landscape-up() {
     text-align: left;
     grid-column: 1 / 5;
+  }
+
+  @include for-big-desktop-up() {
+    font-size: 1.8rem;
   }
 }
 
@@ -235,7 +295,12 @@ main {
   bottom: 1rem;
   left: 1rem;
   color: color(secondary-1);
+  font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
+
+  @include for-desktop-up() {
+    font-size: 1.5rem;
+  }
 }
 
 .last-creation { 
@@ -265,6 +330,10 @@ main {
     width: auto;
     margin: 0;
   }
+
+  @include for-big-desktop-up() {
+    font-size: 1.5rem;
+  }
 }
 
 footer {
@@ -278,6 +347,17 @@ footer {
     justify-content: space-between;
     padding-left: 4em;
     padding-right: 4em;
+  }
+
+  @include for-desktop-up() {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  @include for-big-desktop-up() {
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 2em;
   }
 }
 
@@ -305,10 +385,18 @@ footer {
   
   @include for-tablet-landscape-up(){ 
     display: inline-block;
+    margin-right: 1em;
+  }
+
+  @include for-big-desktop-up() {
+    font-size: 1.4rem;
   }
 }
 
-.right-footer { text-align: right; }
+.right-footer { 
+  text-align: right;
+
+}
 
 .footer-icons { 
   margin-top: 1em;
@@ -319,9 +407,19 @@ footer {
   }
 }
 
+.footer-icons li img {
+  width: 2rem;
+}
+
 .footer-icons li {
   display: inline-block;
   margin-left: 1em;
 }
 
-p.copy-write { color: color(primary-1); }
+p.copy-write { 
+  color: color(primary-1); 
+
+  @include for-big-desktop-up() {
+    font-size: 1.8rem;
+  }
+}
