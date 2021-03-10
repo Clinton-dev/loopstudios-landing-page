@@ -84,6 +84,7 @@ nav {
   header {
     padding-left: 8em;
     padding-right: 8em;
+    padding-bottom: 30em;
   }
 }
 
@@ -123,6 +124,13 @@ nav {
   text-transform: capitalize;
   margin-left: 1em;
 }
+.desktop-item a {
+  color: white;
+  padding-bottom: 0.3em;
+}
+.desktop-item a:hover, .desktop-item a:focus {
+  border-bottom: 1px solid white;
+}
 @media (min-width: 1800px) {
   .desktop-item {
     font-size: 1.5rem;
@@ -152,7 +160,10 @@ nav {
 @media (min-width: 1800px) {
   .hero-section {
     width: 45%;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
     padding-right: 1em;
+    margin-top: 10em;
   }
 }
 
@@ -274,6 +285,7 @@ main {
 @media (min-width: 1800px) {
   .top-half-infor {
     margin-bottom: unset;
+    margin-left: -7em;
   }
 }
 
@@ -298,6 +310,11 @@ main {
 .creation {
   position: relative;
   margin-bottom: 2em;
+  transition: 0.5s ease;
+  opacity: 1;
+}
+.creation:hover {
+  opacity: 0.3;
 }
 @media (min-width: 900px) {
   .creation {
@@ -379,6 +396,10 @@ main {
   border: 1px solid black;
   padding: 0.5em 1em;
 }
+.cta:hover, .cta:focus {
+  background-color: black;
+  color: white;
+}
 @media (min-width: 900px) {
   .cta {
     position: absolute;
@@ -399,6 +420,13 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+}
+footer a {
+  color: white;
+  padding-bottom: 0.3em;
+}
+footer a:hover, footer a:focus {
+  border-bottom: 1px solid white;
 }
 @media (min-width: 900px) {
   footer {

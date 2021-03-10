@@ -65,6 +65,7 @@ header {
   @include for-big-desktop-up() {
     padding-left: 8em;
     padding-right: 8em;
+    padding-bottom: 30em;
   }
 }
 
@@ -103,6 +104,16 @@ header {
   text-transform: capitalize;
   margin-left: 1em;
 
+  a { 
+    color: color(secondary-1);
+    padding-bottom: .3em;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid color(secondary-1);
+    }
+  }
+
   @include for-big-desktop-up() {
     font-size: 1.5rem;
   }
@@ -129,7 +140,10 @@ header {
 
   @include for-big-desktop-up() {
     width: 45%;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
     padding-right: 1em;
+    margin-top: 10em;
   }
 }
 
@@ -241,6 +255,7 @@ main {
   
   @include for-big-desktop-up() {
      margin-bottom: unset;
+     margin-left: -7em;
    }
 }
 
@@ -265,6 +280,12 @@ main {
 .creation { 
   position: relative;
   margin-bottom: 2em;
+  transition: .5s ease;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.3;
+  }
 
   @include for-tablet-landscape-up() {
     background-repeat: no-repeat;
@@ -323,6 +344,12 @@ main {
   border: 1px solid color(primary);
   padding: .5em 1em;
 
+  &:hover,
+  &:focus {
+    background-color: color(primary);
+    color: color(secondary-1);
+  }
+
   @include for-tablet-landscape-up() {
     position: absolute;
     top: 0;
@@ -341,6 +368,16 @@ footer {
   color: color(secondary-1);
   text-align: center;
   padding: 1em;
+
+  a { 
+    color: color(secondary-1);
+    padding-bottom: .3em;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid color(secondary-1);
+    }
+  }
 
   @include for-tablet-landscape-up() {
     display: flex;
