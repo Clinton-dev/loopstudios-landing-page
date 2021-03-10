@@ -305,6 +305,12 @@ main {
 
 .creation-img {
   width: 100%;
+  transition: .5s ease;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.3;
+  }
   
   @include for-tablet-landscape-up() {
     display: none;

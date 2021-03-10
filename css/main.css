@@ -354,6 +354,11 @@ main {
 
 .creation-img {
   width: 100%;
+  transition: 0.5s ease;
+  opacity: 1;
+}
+.creation-img:hover {
+  opacity: 0.3;
 }
 @media (min-width: 900px) {
   .creation-img {
